@@ -1,20 +1,33 @@
-const names = [];
-const birthday = "birthday";
-let newArray = [];
-function writeCards(array, event) {
-    for (let i = 0; i < array.length; i++) {
-    newArray.push(`Thank you, ${array[i]}, for the wonderful ${event} gift!`);
+// const gifts = ["teddy bear", "drone", "doll"];
+
+// function wrapGifts(gifts) {
+//   for (let i = 0; i < gifts.length; i++) {
+//     console.log(`Wrapped ${gifts[i]} and added a bow!`);
+//     debugger;
+//   }
+
+//   return gifts;
+// }
+
+// wrapGifts(gifts);
+
+let name = ["Charlie", "Samip", "Ali"];
+let thankYou = [];
+
+function writeCards(inputArray, event) {
+  for (let i = 0; i < inputArray.length; i++) {
+    thankYou.push(`Thank you, ${inputArray[i]}, for the wonderful ${event} gift!`);
+  }
+
+  return thankYou;
+
 }
 
-return newArray;
-}
-
-console.log(writeCards(names, birthday));
-
-function countDown(integer) {
-  let number = 10;
-  while (number >= 0) {
-    console.log(number--);
+function countDown(int) {
+  while (int > -1) {
+    console.log(int);
+    int--;
   }
 }
-countDown();
+
+countDown(5);
